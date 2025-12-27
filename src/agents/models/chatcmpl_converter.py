@@ -340,7 +340,7 @@ class Converter:
         cls,
         items: str | Iterable[TResponseInputItem],
         preserve_thinking_blocks: bool = False,
-        preserve_tool_output_all_content: bool = False,
+        preserve_tool_output_all_content: bool = True,
     ) -> list[ChatCompletionMessageParam]:
         """
         Convert a sequence of 'Item' objects into a list of ChatCompletionMessageParam.
